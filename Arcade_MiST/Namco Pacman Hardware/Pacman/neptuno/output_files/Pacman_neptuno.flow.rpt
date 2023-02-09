@@ -1,0 +1,161 @@
+Flow report for Pacman_neptuno
+Thu Feb  9 21:31:20 2023
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Feb  9 21:31:16 2023       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; Pacman_neptuno                              ;
+; Top-level Entity Name              ; neptuno_top                                 ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE55F23C8                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 7,870 / 55,856 ( 14 % )                     ;
+;     Total combinational functions  ; 7,279 / 55,856 ( 13 % )                     ;
+;     Dedicated logic registers      ; 3,070 / 55,856 ( 5 % )                      ;
+; Total registers                    ; 3070                                        ;
+; Total pins                         ; 84 / 325 ( 26 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 503,040 / 2,396,160 ( 21 % )                ;
+; Embedded Multiplier 9-bit elements ; 11 / 308 ( 4 % )                            ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 02/09/2023 21:30:08 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Pacman_neptuno      ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                             ;
++--------------------------------------------------------+-------------------------------------------------------------------------------------+--------------------+-------------+------------+
+; Assignment Name                                        ; Value                                                                               ; Default Value      ; Entity Name ; Section Id ;
++--------------------------------------------------------+-------------------------------------------------------------------------------------+--------------------+-------------+------------+
+; ADD_PASS_THROUGH_LOGIC_TO_INFERRED_RAMS                ; Off                                                                                 ; On                 ; --          ; --         ;
+; AUTO_GLOBAL_MEMORY_CONTROLS                            ; -- (Not supported for targeted family)                                              ; Off                ; --          ; --         ;
+; AUTO_IMPLEMENT_IN_ROM                                  ; -- (Not supported for targeted family)                                              ; Off                ; --          ; --         ;
+; AUTO_MERGE_PLLS                                        ; Off                                                                                 ; On                 ; --          ; --         ;
+; AUTO_RESOURCE_SHARING                                  ; On                                                                                  ; Off                ; --          ; --         ;
+; BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES ; -- (Not supported for targeted family)                                              ; Care               ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                                  ; 277302814092627.167597460857935                                                     ; --                 ; --          ; --         ;
+; ENABLE_CLOCK_LATENCY                                   ; On                                                                                  ; Off                ; --          ; --         ;
+; ENABLE_RECOVERY_REMOVAL_ANALYSIS                       ; On                                                                                  ; Off                ; --          ; --         ;
+; FINAL_PLACEMENT_OPTIMIZATION                           ; Always                                                                              ; Automatically      ; --          ; --         ;
+; FITTER_EFFORT                                          ; Standard Fit                                                                        ; Auto Fit           ; --          ; --         ;
+; FMAX_REQUIREMENT                                       ; 101.58 MHz                                                                          ; --                 ; --          ; --         ;
+; IGNORE_CLOCK_SETTINGS                                  ; On                                                                                  ; Off                ; --          ; --         ;
+; IGNORE_LCELL_BUFFERS                                   ; On                                                                                  ; Off                ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP                                 ; 85                                                                                  ; --                 ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP                                 ; 0                                                                                   ; --                 ; --          ; --         ;
+; MISC_FILE                                              ; pll.ppf                                                                             ; --                 ; --          ; --         ;
+; MISC_FILE                                              ; ../../../../DeMiSTify/controller/../EightThirtyTwo/RTL/altera/debug_virtualjtag.cmp ; --                 ; --          ; --         ;
+; NUM_PARALLEL_PROCESSORS                                ; All                                                                                 ; --                 ; --          ; --         ;
+; OPTIMIZE_POWER_DURING_FITTING                          ; Off                                                                                 ; Normal compilation ; --          ; --         ;
+; PARTITION_COLOR                                        ; -- (Not supported for targeted family)                                              ; --                 ; neptuno_top ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL                    ; -- (Not supported for targeted family)                                              ; --                 ; neptuno_top ; Top        ;
+; PARTITION_NETLIST_TYPE                                 ; -- (Not supported for targeted family)                                              ; --                 ; neptuno_top ; Top        ;
+; PLACEMENT_EFFORT_MULTIPLIER                            ; 4.0                                                                                 ; 1.0                ; --          ; --         ;
+; PRE_FLOW_SCRIPT_FILE                                   ; quartus_sh:../rtl/build_id.tcl                                                      ; --                 ; --          ; --         ;
+; PRE_MAPPING_RESYNTHESIS                                ; On                                                                                  ; Off                ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY                               ; output_files                                                                        ; --                 ; --          ; --         ;
+; REMOVE_REDUNDANT_LOGIC_CELLS                           ; On                                                                                  ; Off                ; --          ; --         ;
+; ROUTER_EFFORT_MULTIPLIER                               ; 2.0                                                                                 ; 1.0                ; --          ; --         ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL                       ; MAXIMUM                                                                             ; Normal             ; --          ; --         ;
+; TCO_REQUIREMENT                                        ; 5 ns                                                                                ; --                 ; --          ; --         ;
+; TH_REQUIREMENT                                         ; 5 ns                                                                                ; --                 ; --          ; --         ;
+; TOP_LEVEL_ENTITY                                       ; neptuno_top                                                                         ; Pacman_neptuno     ; --          ; --         ;
+; TPD_REQUIREMENT                                        ; 5 ns                                                                                ; --                 ; --          ; --         ;
+; TSU_REQUIREMENT                                        ; 5 ns                                                                                ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; SDRAM_WINBOND=1                                                                     ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; SDRAM_ROWBITS=13                                                                    ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; SDRAM_COLBITS=9                                                                     ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; SDRAM_CL=2                                                                          ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; SDRAM_tCKminCL2=7500                                                                ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; SDRAM_tRC=60000                                                                     ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; SDRAM_tWR=2                                                                         ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; SDRAM_tRP=15000                                                                     ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; DEMISTIFY_PARALLEL_AUDIO=1                                                          ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; DEMISTIFY_NEPTUNO=1                                                                 ; --                 ; --          ; --         ;
+; VERILOG_MACRO                                          ; DEMISTIFY=1                                                                         ; --                 ; --          ; --         ;
++--------------------------------------------------------+-------------------------------------------------------------------------------------+--------------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:28     ; 1.0                     ; 1139 MB             ; 00:00:37                           ;
+; Fitter                    ; 00:00:34     ; 1.3                     ; 2290 MB             ; 00:01:31                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 827 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.6                     ; 1067 MB             ; 00:00:05                           ;
+; Total                     ; 00:01:08     ; --                      ; --                  ; 00:02:15                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; jordi-5600G      ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; Fitter                    ; jordi-5600G      ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; Assembler                 ; jordi-5600G      ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; TimeQuest Timing Analyzer ; jordi-5600G      ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Pacman_neptuno -c Pacman_neptuno
+quartus_fit --read_settings_files=off --write_settings_files=off Pacman_neptuno -c Pacman_neptuno
+quartus_asm --read_settings_files=off --write_settings_files=off Pacman_neptuno -c Pacman_neptuno
+quartus_sta Pacman_neptuno -c Pacman_neptuno
+
+
+
